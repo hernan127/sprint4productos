@@ -59,7 +59,7 @@
                       </li> -->
 
                       <li>
-                        <a class="navbar-brand text-brand lg-viewport" href="index.php"> <img src="{{ asset('img/IsologoGardenia.png') }}" class="img-fluid" alt=""> </a>
+                        <a class="navbar-brand text-brand lg-viewport" href="/index.php"> <img src="{{ asset('img/IsologoGardenia.png') }}" class="img-fluid" alt=""> </a>
                       </li>
 
                       <li class="nav-item">
@@ -80,7 +80,9 @@
                       </li>
                       @endif
                         <!-- Authentication Links -->
-
+                        <li class="nav-item">
+                          <a class="nav-link" href="/cart">Carrito ({{ isset(session('cart')['products']) ? count(session('cart')['products']) : 0 }})</a>
+                        </li>
                     </ul>
 
 

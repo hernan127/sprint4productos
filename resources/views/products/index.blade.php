@@ -37,6 +37,7 @@
               <div class="card-title-b">
                 <h2 class="title-2">
                   <a href="products/{{ $product->id }}">{{ $product->name }}</a>
+                  <a class="btn btn-info" href="/cart/add/{{ $product->id }}">Agregar</a>
                 </h2>
               </div>
             </div>

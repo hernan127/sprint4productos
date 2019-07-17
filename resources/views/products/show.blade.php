@@ -31,7 +31,9 @@
           <img src="/storage/{{ $product->imageLoc }}" alt="Imagen del Producto">
           @endif
           <br>
+          @if(auth()->user() && auth()->user()->role === 9)
           <a class="btn btn-warning" href="{{ url("products/$product->id/edit") }}">Editar Producto</a>
+          @endif
           <br>
           <br>
 
